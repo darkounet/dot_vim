@@ -33,6 +33,7 @@ Plugin 'mhinz/vim-startify'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'scrooloose/syntastic'
 Plugin 'honza/vim-snippets'
+Plugin 'spolu/dwm.vim'
 
 call vundle#end()
 
@@ -55,10 +56,9 @@ let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 let g:indentLine_color_term = 239
 
 " Conf_NERDTree
-map <C-n> :NERDTreeToggle<CR>
+map <C-t> :NERDTreeToggle<CR>
 
 " Conf_Syntastic
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -67,3 +67,5 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Conf_dmw
