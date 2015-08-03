@@ -1,3 +1,4 @@
+set shell=/bin/bash
 set nocompatible
 set encoding=utf8
 filetype off
