@@ -9,7 +9,7 @@ set softtabstop=4
 set smarttab
 set expandtab
 set number
-set syntax=on
+syntax on
 set rtp+=~/.vim/bundle/Vundle.vim
 
 " Vundle Plugins
@@ -30,6 +30,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
 Plugin 'mhinz/vim-signify'
 Plugin 'mhinz/vim-startify'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'scrooloose/syntastic'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 
@@ -53,3 +56,14 @@ let g:indentLine_color_term = 239
 
 " Conf_NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" Conf_Syntastic
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
