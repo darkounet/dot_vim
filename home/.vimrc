@@ -34,6 +34,7 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'scrooloose/syntastic'
 Plugin 'honza/vim-snippets'
 Plugin 'spolu/dwm.vim'
+Plugin 'mattesgroeger/vim-bookmarks'
 
 call vundle#end()
 
@@ -69,3 +70,19 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Conf_dmw
+
+" Conf_vim_bookmarks
+"
+" Shortcut    Command
+" mm  :BookmarkToggle
+" mi  :BookmarkAnnotate <TEXT>
+" mn  :BookmarkNext
+" mp  :BookmarkPrev
+" ma  :BookmarkShowAll
+" mc  :BookmarkClear
+" mx  :BookmarkClearAll
+
+highlight BookmarkSign ctermbg=NONE ctermfg=160
+highlight BookmarkLine ctermbg=194 ctermfg=NONE
+let g:bookmark_sign = '♥'
+let g:bookmark_highlight_lines = 1
