@@ -9,6 +9,8 @@ set softtabstop=4
 set smarttab
 set expandtab
 set number
+set hlsearch
+set incsearch
 syntax on
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -35,6 +37,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'honza/vim-snippets'
 Plugin 'spolu/dwm.vim'
 Plugin 'mattesgroeger/vim-bookmarks'
+Plugin 'koreyconway/ranger.vim'
 
 call vundle#end()
 
@@ -86,3 +89,7 @@ highlight BookmarkSign ctermbg=NONE ctermfg=160
 highlight BookmarkLine ctermbg=194 ctermfg=NONE
 let g:bookmark_sign = '♥'
 let g:bookmark_highlight_lines = 1
+
+" Conf_Ranger
+" Map F9 pour ouvrir un nouveau Ranger dans un nouveau tab
+nnoremap <f9> :tabe %:p:h<cr>

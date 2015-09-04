@@ -43,3 +43,21 @@
 [submodule "home/.vim/bundle/vim-twig"]
 	path = home/.vim/bundle/vim-twig
 	url = https://github.com/evidens/vim-twig.git
+[submodule "home/.vim/ryanoasis/vim-devicons"]
+	path = home/.vim/bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "home/.vim/scrooloose/syntastic"]
+	path = home/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "home/.vim/honza/vim-snippets"]
+	path = home/.vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippet.git
+[submodule "home/.vim/spolu/dwm.vim"]
+	path = home/.vim/bundle/dwm.vim
+	url = https://github.com/spolu/dwm.vim.git
+[submodule "home/.vim/mattesgroeger/vim-bookmarks"]
+	path = home/.vim/bundle/vim-bookmarks
+	url = https://github.com/mattesgroeger/vim-bookmarks.git
+[submodule "home/.vim/koreyconway/ranger.vim"]
+	path = home/.vim/bundle/ranger.vim
+	url = https://github.com/koreyconway/ranger.vim.git
